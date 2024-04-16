@@ -36,10 +36,10 @@ In this project, you'll have the opportunity to demonstrate the skills you've le
 
 ## Implementing task `Deploying Your Infrastructure`
 * Run cmd `ssh-keygen -t rsa -b 4096 -C "{{your-email-address}}"` to generate ssh key for linux machine
-* Run cmd `terraform init` to download cloud provider azure resource manager
+* Run cmd `terraform init` to download cloud provider azure resource manager.
     Remember to go to terraform folder with cmd "cd terraform"
-* Run cmd `terraform plan -out solution.plan -var-file proj1.tfvars` to save the ![plan](./screenshots/terraform-plan.png) which terraform will create all resources in the template with input variables
-* Run cmd `terraform apply "solution.plan"` to start create ![resources](./screenshots/resources-apply.png) following solution.plan
+* Run cmd `terraform plan -out solution.plan -var-file proj1.tfvars` to save the plan which terraform will create all resources in the template with input variables ![terraform-plan](./screenshots/terraform-plan.png)
+* Run cmd `terraform apply "solution.plan"` to start create resources following solution.plan ![terraform-apply](./screenshots/resources-apply.png) 
 * Run cmd `terraform destroy -var-file proj1.tfvars` to destroy all resources created above
 
 ### Structure
