@@ -25,13 +25,13 @@ In this project, you'll have the opportunity to demonstrate the skills you've le
 
 ## Implementing task `Create a Server Image`
 * Create file ![server.json](./packer/server.json) to define linux image 
-* Run cmd `packer build packer/server.json` to create an image from template
+* Run cmd `packer build packer/server.json` to create an image from template.
     Remember to change your account information in variables section of template
 
 ## Implementing task `Create the infrastructure`
-* Create file ![main.tf](./terraform/main.tf) to define infrastructures as code 
-* Create file ![vars.tf](./terraform/vars.tf) to define all varibles you can use for each application, environment, location infrastructure
-* Create var file ![proj1.tfvars](./terraform/proj1.tfvars) to input all above defined variables
+* Create file [main.tf](./terraform/main.tf) to define infrastructures as code 
+* Create file [vars.tf](./terraform/vars.tf) to define all varibles you can use for each application, environment, location infrastructure
+* Create var file [proj1.tfvars](./terraform/proj1.tfvars) to input all above defined variables.
     Remember to change image id from output of packer ![packer-template.png](./screenshot/packer-template.png) with your image id
 
 ## Implementing task `Deploying Your Infrastructure`
