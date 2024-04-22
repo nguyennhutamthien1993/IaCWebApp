@@ -12,6 +12,7 @@ variable "location_abbreviation" {
 
 variable "instance_count" {
   type = string
+  default = "2"
 }
 
 variable "environment" {
@@ -32,10 +33,6 @@ variable "vm_root_username" {
 
 variable "image_linux" {
   type = string
-}
-
-variable "nsg_inbounds_allow" {
-  type = list(string)
 }
 
 variable "common_tags" {
